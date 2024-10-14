@@ -7,8 +7,8 @@ import config
 
 hmmer_result = './result.out'
 id_list = './id_list.txt'
-target_species_proteins = "./protein_seq/{}.fasta".format(config.species)
-target_gene_proteins = 'protein_for_target_id.fasta'
+target_species_proteins = "./protein_seq/{}.fa.pep".format(config.species)
+target_gene_proteins = 'protein_for_target_id.fa.pep'
 hmmbuild_command = 'hmmbuild model.hmm PFseed.txt'
 hmmsearch_command = 'hmmsearch model.hmm {} > {}'.format(target_species_proteins, hmmer_result)
 
